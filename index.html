@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para ti ❤️</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <div class="wrap">
+    <div class="card closed" id="card">
+      <div class="top">
+        <div class="logo">❤</div>
+        <div>
+          <h1>Una sorpresa para alguien muy especial</h1>
+          <p class="lead muted">Abre la carta, mira las animaciones y presiona el botón para ver el mensaje secreto.</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="letter">
+          <div class="inside" id="inside">
+            <div class="message" id="message">
+              <p>Hola, preciosa —</p>
+              <p>Hoy hice esto para recordarte lo importante que eres para mí. Quise empaquetarlo en colores, movimiento y palabras para que, aunque estemos lejos, puedas sentir un abrazo en la pantalla.</p>
+              <p>En este pequeño sitio encontrarás un corazón que late por ti, mensajes que aparecerán uno a uno y algunas sorpresitas (clic en "Mostrar sorpresa").</p>
+              <p>Gracias por tu risa, por tus miradas y por ser mi compañera. Si me dejas, quiero seguir sorprendiéndote cada día.</p>
+              <div class="signature">Con todo mi ♥, <div style="margin-left:10px;display:inline-block">Tu persona favorita</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="heart" id="heart">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="heartPath" d="M12 21s-7.5-4.35-10-7.5C-0.5 8.5 3 4 6.5 6.5 8.25 7.9 9 10 12 12c3-2 3.75-4.1 5.5-5.5C21 4 24.5 8.5 22 13.5 19.5 16.65 12 21 12 21z" fill="url(#g)"/>
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#ff5c8a"/>
+                  <stop offset="100%" stop-color="#ffb3c6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="controls">
+            <button id="openBtn">Abrir carta</button>
+            <button id="surpriseBtn" class="ghost">Mostrar sorpresa</button>
+            <button id="matrixBtn" class="ghost">Lluvia de Te Amo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="confetti" id="confetti"></div>
+      <div id="petals"></div>
+      <div id="dinosaurs"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
