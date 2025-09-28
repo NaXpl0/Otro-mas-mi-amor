@@ -111,7 +111,7 @@ function startMatrix(){
     }
   }
   matrixInterval = setInterval(draw,60);
-  setTimeout(stopMatrix,8000); // Lluvia dura 8 segundos
+  setTimeout(stopMatrix,10000); // Lluvia dura 8 segundos
 }
 
 function stopMatrix(){
