@@ -91,7 +91,7 @@ function startMatrix(){
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  const letters = ['❤','TE AMO','❤','TE AMO'];
+  const letters = ['❤','Patroclo','❤','Adrian'];
   const fontSize = 20;
   const columns = canvas.width / fontSize;
   const drops = [];
@@ -147,6 +147,6 @@ surpriseBtn.addEventListener('click', ()=>{
   dino.style.animationDuration = (5 + Math.random()*5) + 's';
   // dirección aleatoria
   if(Math.random() > 0.5) dino.style.transform = 'scaleX(-1)';
-  dino.textContent = '🦖';
+  dino.textContent = '💗';
   dinosaursContainer.appendChild(dino);
 });
